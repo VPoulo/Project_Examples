@@ -22,8 +22,8 @@ html {
 /* NAVBAR CODE */
 .nav-bar{
     display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #000000;
     justify-content: flex-start;
     position: fixed;
@@ -63,11 +63,6 @@ html {
     font-size: 400%;
 }
 
-.header.home:hover{
-    color: #E63946;
-}
-
-
 
 /* ABOUT ME */
 .about-me{
@@ -88,6 +83,32 @@ html {
     margin: 50px;
   }
 
-
-  
 /* RESUME */
+.uni-list{
+    list-style-type: none;
+}
+
+.education-point{
+    margin-bottom: 20px;
+}
+
+.list-item{
+    margin: 0px 0px 0px 20px;
+}
+
+.list-item.link{
+    color: #ffffff;
+    /* text-decoration: none; */
+}
+
+.list-item.link:hover{
+    color:#E63946
+}
+
+.download-resume{
+    color: #E63946;
+    display: inline-block;
+}
+
+/* PROJECTS */
+
