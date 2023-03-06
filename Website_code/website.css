@@ -5,6 +5,7 @@ html {
 
 .body {
     margin: 0px;
+    margin-bottom: 230px;
     padding: 0px;
     background-color: #3F403F;
     color: #ffffff;
@@ -16,7 +17,7 @@ html {
 }  
 
 .section {
-    margin: auto 70px;
+    margin: auto 70px 70px 70px;
 }
 
 /* NAVBAR CODE */
@@ -128,7 +129,83 @@ img.selfie {
     color: #000000;
     background-color: #EFEFEF;
     border-radius: 10px;
-    height:300px;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+/* CONTACT ME */
+.form {
+    margin: 0 auto;
+    color: #000000;
+    background-color: #EFEFEF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.form-element {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.form-element>input{
+    float: right;
+}
+
+.form-element>textarea{
+    float: right;
+}
+
+.input{
+    width: 65%;
+    height: 20px;
+    border: 1px solid #3F403F;
+    padding: 2px;
+    outline: none;
+}
+
+.input.message{
+    height: 100px;
+    
+}
+
+.btn {
+    font-size: 100%;
+    width: 130px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 11px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #7600bc;
+    border-color: #000000;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.btn-primary:hover{
+    background-color: #338000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    color: var(--green);
+    background-color: #e88504;
+    border-color: #000000;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.btn-secondary:hover{
+    background-color: #D0312D;
+    border-color: #000000;
+    color: #ffffff;
 }

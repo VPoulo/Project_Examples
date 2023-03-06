@@ -23,7 +23,7 @@
           <a href="#projects" class="nav-link">Projects</a>
         </li>
         <li class="list-item">
-          <a href="#contact" class="nav-link">Contact Me</a>
+          <a href="#contact-me" class="nav-link">Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -135,16 +135,101 @@
       <h1 class="header" id="projects">Projects</h1>
       <section class="section projects-container">
         <div class="project project">
-          <h3>Animals</h3>
-          <p></p>
+          <h3>Reservation System</h3>
+          <p>Language: C++</p>
+          <p>
+            This project was to create a reservation system for three different
+            venues. The user can create a reservation at a ski lodge, a
+            restaurant, or a museum. I created a vector data type and then used
+            a generic programming template for the doubely linked list and array
+            data types. The goal of this assignment was to practice using the
+            generic template library, operator overloading (l-value v. r-value),
+            exception handling, as well as constructors. Check out the code for
+            more details.
+          </p>
+          <a
+            class="code-link"
+            href="https://github.com/VPoulo/Project_Examples/tree/main/Reservation-System"
+            >Link to Code</a
+          >
         </div>
-        <div class="project project2"></div>
-        <div class="project project3"></div>
+        <div class="project project2">
+          <h3>Gradebook</h3>
+          <p>Language: Python</p>
+          <p>
+            This project was to create a gradebook for a teacher to use. The
+            user is prompted to enter the grades for different students. The
+            teacher enters grades for specific assignments for each student. The
+            teacher can then look-up individual students grades by name and see
+            who is passing the class. All students can be listed and grades can
+            be updated. The data structure for this project is a binary search
+            tree. Click below to see more information.
+          </p>
+          <a
+            class="code-link"
+            href="https://github.com/VPoulo/Project_Examples/tree/main/Gradebook"
+            >Link to Code</a
+          >
+        </div>
+        <div class="project project3">
+          <h3>B-Tree (2-3 Tree)</h3>
+          <p>Language: C++</p>
+          <p>
+            This project was primarily to practice a complex tree data
+            structure. Additional learning goals were to use smart pointers and
+            practice inheritance. In this program, the user can enter different
+            concepts and add them to a repository. The concepts are then stored
+            in a 2-3 tree data structure. The 2-3 tree is always essentially
+            balanced and therefore has great search run-time. This one of the
+            most complex data structures I have programmed. To check out the
+            program, click the link below.
+          </p>
+          <a
+            class="code-link"
+            href="https://github.com/VPoulo/Project_Examples/tree/main/B-Tree"
+            >Link to Code</a
+          >
+        </div>
       </section>
 
       <!-- CONTACT ME -->
-      <h1 class="header" id="contact-me">Contact Me</h1>
-      <section class="section contact-me"></section>
+      <form class="form">
+        <h1 class="contact" id="contact-me">Contact Me</h1>
+        <div class="form-element">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input input-box"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-element">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input input-box"
+            placeholder="you@email.com"
+          />
+        </div>
+        <div class="form-element">
+          <label for="message">Message:</label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            class="input message input-box"
+            placeholder="Write your message here"
+          ></textarea>
+        </div>
+        <div>
+          <input type="reset" value="Reset" class="btn btn-secondary" />
+          <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+      </form>
     </main>
   </body>
 </html>
