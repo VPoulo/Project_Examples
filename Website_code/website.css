@@ -106,8 +106,12 @@ img.selfie {
 }
 
 .download-resume{
-    color: #E63946;
+    color: #ffffff;
     display: inline-block;
+}
+
+.download-resume:hover{
+    color: #E63946;
 }
 
 /* PROJECTS */
