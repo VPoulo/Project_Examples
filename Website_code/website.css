@@ -5,19 +5,30 @@ html {
 
 .body {
     margin: 0px;
-    margin-bottom: 230px;
+    margin-bottom: 300px;
     padding: 0px;
     background-color: #3F403F;
     color: #ffffff;
 }
 
 .header {
+    margin: 40px 20px 20px 20px;
+    font-size: 240%;
+}  
+
+.section {
+     margin: 20px;
+}
+
+@media (min-width: 1200px){
+.header {
     margin: 100px 50px 10px 50px;
     font-size: 240%;
 }  
 
 .section {
-    margin: auto 70px 70px 70px;
+     margin: auto 70px 70px 70px;
+}
 }
 
 /* NAVBAR CODE */
@@ -41,7 +52,7 @@ html {
 
 .nav-link {
     display: block;
-    width: 150px;
+    width: 130px;
     padding: 25px;
     color: #ffffff;
     font-weight: 500;
@@ -53,6 +64,7 @@ html {
 .nav-link:hover {
     background-color: #E63946;
 }
+
 
 /* HOME */
 .home{
@@ -71,18 +83,38 @@ html {
 }
 
 .bio-text{
-    font-size: 130%;
-    display: inline-block;
+    font-size: 110%;
+    display: block;
     margin: auto;
-    vertical-align: middle;
-    width: 50%;
-  }
-  
+    padding-top: 30px;
+}
+
 img.selfie {
     border-radius: 50px;
-    vertical-align: middle;
-    margin: 50px;
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 350px;
+    
   }
+
+@media (min-width: 1200px){
+    .bio-text{
+        font-size: 130%;
+        display: inline-block;
+        margin: auto;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    img.selfie {
+        border-radius: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 50px;
+      }
+}
+  
 
 /* RESUME */
 .uni-list{
@@ -116,13 +148,25 @@ img.selfie {
 }
 
 /* PROJECTS */
+
 .projects-container{
     display: grid;
     margin-top: 30px;
-    height: 400px;
+    height: auto;
     gap: 20px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+@media (min-width: 1200px){
+    .projects-container{
+        display: grid;
+        margin-top: 30px;
+        height: auto;
+        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto auto auto;
+    }
 }
 
 .project{
@@ -136,7 +180,7 @@ img.selfie {
 
 /* CONTACT ME */
 .form {
-    margin: 0 auto;
+    margin: 100px auto auto auto;
     color: #000000;
     background-color: #EFEFEF;
     border: 1px solid #000000;
