@@ -33,50 +33,100 @@ html {
 }
 
 @media (min-width: 1200px){
-.header {
-    margin: 100px 50px 10px 50px;
-    font-size: 240%;
-}  
+    .header {
+        margin: 100px 50px 10px 50px;
+        font-size: 240%;
+    }  
 
-.section {
-     margin: auto 70px 70px 70px;
+    .section {
+        margin: auto 70px 70px 70px;
+    }
 }
-}
+
 
 /* NAVBAR CODE */
-.nav-bar{
-    display: flex;
+@media (max-width: 1199px){
+    .nav-bar{
+        overflow: hidden;
+        background-color: var(--black);
+        position: fixed;
+        top:0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .list{
+        list-style-type: none;
+        display: none;
+    }
+
+    .list.open-nav{
+        display: block;
+    }
+
+    .nav-link{
+        display: block;
+        text-decoration: none;
+        color: var(--white);
+        font-size: 140%;
+        padding: 14px 16px;
+    }
+
+    .nav-link:hover{
+        color: var(--red);
+    }
+
+    .menu-button{
+        background-color: var(--black);
+        color: var(--white);
+        border-width: 0px;
+        font-size: 140%;
+        margin-left: 10px;
+    }
+
+    .menu-button:hover{
+        color: var(--red);
+    }
 }
 
-.list{
-    background-color: var(--black);
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: flex-start;
-    display: flex;
-    position: fixed;
-    top: 0;
-    width:100%;
-    margin: 0;
-    padding: 0;
-  }
+@media (min-width: 1200px){
+    .nav-bar{
+        display: flex;
+    }
 
-.nav-link {
-    display: block;
-    width: 130px;
-    padding: 25px;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 140%;
-    text-decoration: none;
-    text-align: center;
-  }
+    .list{
+        background-color: var(--black);
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: flex-start;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width:100%;
+        margin: 0;
+        padding: 0;
+    }
 
-.nav-link:hover {
-    background-color: var(--red);
+    .nav-link {
+        display: block;
+        width: 130px;
+        padding: 25px;
+        color: var(--white);
+        font-weight: 500;
+        font-size: 140%;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        background-color: var(--red);
+    }
+
+    .menu-button{
+        display: none;
+    }
 }
-
 
 /* HOME */
 .home{
@@ -190,6 +240,10 @@ img.selfie {
 }
 
 .code-link{
+    color: var(--black)
+}
+
+.code-link:hover{
     color: var(--red);
 }
 

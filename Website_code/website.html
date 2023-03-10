@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaughn Poulo</title>
+    <script defer src="website.js"></script>
     <link rel="stylesheet" href="website.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body class="body">
+    <!-- NAVIGATION BAR -->
     <nav class="nav-bar">
+      <a class="menu-button">
+        <i class="sub-menu fa fa-bars"></i>
+      </a>
       <ul class="list">
         <li class="list-item">
-          <a href="#home" class="nav-link">Home</a>
+          <a href="#home" class="nav-link home-link-c">Home</a>
         </li>
         <li class="list-item">
-          <a href="#about-me" class="nav-link">About Me</a>
+          <a href="#about-me" class="nav-link about-me-link">About Me</a>
         </li>
         <li class="list-item">
-          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#resume" class="nav-link resume-link">Resume</a>
         </li>
         <li class="list-item">
-          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#projects" class="nav-link projects-link">Projects</a>
         </li>
         <li class="list-item">
-          <a href="#contact-me" class="nav-link">Contact Me</a>
+          <a href="#contact-me" class="nav-link contact-me-link">Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +45,7 @@
 
       <!-- ABOUT ME -->
       <h1 class="header" id="about-me">About Me</h1>
-      <section class="section about-me">
+      <div class="section about-me">
         <img
           src="../images/Vaughn.jpg"
           alt="headshot of Vaughn"
@@ -62,7 +71,7 @@
           helping build a large software project from the ground up, machine
           learning, and artificial intelligence.
         </p>
-      </section>
+      </div>
 
       <!-- RESUME -->
       <h1 class="header" id="resume">Resume</h1>
@@ -216,7 +225,6 @@
         <div class="form-element">
           <label for="message">Message:</label>
           <textarea
-            type="text"
             name="message"
             id="message"
             class="input message input-box"
